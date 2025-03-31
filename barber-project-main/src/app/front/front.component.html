@@ -1,0 +1,32 @@
+<div class="main">
+<div class="top2">
+    <h1 style="color: rgb(250, 38, 74);">Last Minute Deals</h1> 
+  </div>
+  <div  class="offers">
+    <h1>At Salon</h1> 
+
+  </div>
+  <div class="shop-container">
+    <div  *ngFor="let item of shop" class="shop-box">
+      <img [src]="item.imag">
+
+      <div class="shop-info">
+        <h3> {{item.name}} </h3>
+      </div>
+    </div>
+  </div>
+  <div>
+   <h1 style="color: red;">Advance Booking Deals</h1> 
+  </div>
+  <div class="cabins">
+  <div *ngFor="let facility of shopinfo" class="shop-int">
+    <img [src]="facility.img">
+  <div class="row2">
+    <h3> {{facility.cabine}} </h3>
+        <p>{{facility.facilitys}}</p> 
+  </div>
+  </div>
+  </div>
+ 
+
+</div>

@@ -1,0 +1,159 @@
+.main {
+  padding: 20px;
+  overflow: hidden;  /* Hide any overflowing content */
+}
+
+.top2 {
+  text-align: center;
+}
+
+.offers {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+  overflow: hidden;  /* Prevent content from overflowing */
+}
+
+.shop-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;  /* Prevent content from overflowing */
+}
+
+.shop-box img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.shop-info {
+  text-align: center;
+}
+
+.cabins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+  overflow: hidden;  /* Prevent content from overflowing */
+}
+
+.shop-int {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;  /* Prevent content from overflowing */
+}
+
+.shop-int img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* For screens larger than 1080px */
+@media screen and (min-width: 1080px) {
+  .shop-container, .cabins {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .shop-box,
+  .shop-int {
+    width: 30%;
+    max-width: 350px;
+  }
+
+  .shop-box img,
+  .shop-int img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* For very large screens (above 1200px) */
+@media screen and (min-width: 1200px) {
+  .shop-container, .cabins {
+    gap: 25px;
+  }
+
+  .shop-box,
+  .shop-int {
+    width: 30%;
+    max-width: 350px;
+  }
+
+  .shop-box img,
+  .shop-int img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* For smaller screens (max-width 800px) */
+@media screen and (max-width: 800px) {
+  .shop-container,
+  .cabins {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-box,
+  .shop-int {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .shop-box img,
+  .shop-int img {
+    width: 100%;
+    height: auto;
+  }
+
+  .shop-info h3,
+  .row2 h3 {
+    font-size: 1.2rem;
+  }
+
+  .row2 p {
+    font-size: 1rem;
+  }
+}
+
+/* For medium screens (800px to 1080px) */
+@media screen and (min-width: 800px) and (max-width: 1080px) {
+  .shop-container,
+  .cabins {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .shop-box,
+  .shop-int {
+    width: 45%;
+    max-width: 450px;
+  }
+
+  .shop-box img,
+  .shop-int img {
+    width: 90%;
+    height: auto;
+  }
+}
+

@@ -1,0 +1,24 @@
+
+<div class="container w-full flex flex-col items-center justify-center">
+   
+    <img src="https://t4.ftcdn.net/jpg/03/55/16/43/360_F_355164398_5XM7LE98RWypsWXEPzL3m4Vd2oxqvN2q.jpg" class="login w-full  sm:max-w-sm md:max-w-md lg:max-w-lg h-auto mb-6">
+    
+
+    <h1 class="OTP text-2xl w-[75%] sm:text-3xl md:text-4xl lg:text-3xl font-semibold text-center mb-6">Enter Mobile Number to Get OTP</h1>
+  
+
+    <form class=" p-5">
+
+        <input type="text" placeholder="Enter your name" class="nameholder w-full sm:max-w-xs md:max-w-md lg:max-w-lg p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 ">
+        
+        <input type="text" placeholder="Enter your Number" class="numberholder w-full sm:max-w-xs md:max-w-md lg:max-w-lg p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 " [(ngModel)]="userNumber" (input)="validateNumber()">
+        
+        <div *ngIf="isInvalid" class="error-message text-red-500 text-sm mb-4">Please enter a valid number</div>
+        
+        
+        <button routerLink="/account" class="get w-full sm:max-w-xs md:max-w-md lg:max-w-lg bg-zinc-950 text-white py-2 rounded-lg hover:bg-zinc-700 focus:outline-none">Get OTP</button>
+        
+    </form>
+    <h5 class="by text-[16px] font-medium text-zinc-600 sm:text-base md:text-lg text-center mt-6">By continuing, you agree to our</h5>
+    <h4 class="terms text-[16px] font-medium underline text-zinc-800 sm:text-base md:text-lg text-center text-blue-600 hover:underline cursor-pointer">Terms of Services, Privacy Policy <span class="">&</span> Content Policy</h4>
+</div>

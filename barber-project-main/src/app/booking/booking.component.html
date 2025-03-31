@@ -1,0 +1,47 @@
+
+<div class="main h-auto">
+
+  <div class="head flex items-center justify-between p-4 bg-gray-100">
+    <div *ngIf="showImage; else imageTemplate">
+    </div>
+    
+    <ng-template #imageTemplate>
+      <img routerLink="/account" src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg" class="user w-12 h-12 rounded-full border-2 border-gray-300">
+    </ng-template>
+    
+    <h3 class="text-lg font-semibold text-gray-700">Hi, user</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmeOGLduW1RZTkLEwKQzdfg_iDLa6SZ6gASQ&s" class="notification w-6 h-6">
+  </div>
+  <main class="w-full mt-2 flex flex-col justify-center items-center gap-5 p-5">
+    <span class="text-xl  w-full text-start font-medium">Select Your Preference</span>
+
+    
+    <div class="w-full h-[200px] bg-cover bg-no-repeat flex flex-col justify-center p-3 gap-2 bg-white  rounded-lg shadow-md  h-46" style="background-image: url('https://cdn.lovin.co/wp-content/uploads/sites/1/2021/03/31143640/Home--e1617194134562.jpg');">
+  <h1 class="text-xl font-medium text-zinc-100">AT HOME</h1>
+  <p class="text-md text-zinc-200 w-[60%] font-medium">Get a hairstylist or beautician home</p>
+  <button class="bg-black w-fit text-white px-5 py-1 rounded-lg border hover:border-zinc-900 hover:text-black hover:bg-white duration-500">Book Now</button>
+</div>
+
+
+
+<div class="w-full h-[200px] bg-cover bg-no-repeat flex flex-col justify-center p-3 gap-2 bg-white  rounded-lg shadow-md  h-46" style="background-image: url('https://thumbs.dreamstime.com/b/professional-barber-preparing-his-happy-indian-client-yellow-cape-hearcut-barbershop-professional-barber-preparing-264175617.jpg');">
+  <h1 class="text-xl font-medium text-zinc-100">AT SALON</h1>
+  <p class="text-md text-zinc-100 w-[60%] font-medium">Schedule your salon service appointment</p>
+  <button class="bg-black w-fit text-white px-5 py-1 rounded-lg border hover:border-zinc-900 hover:text-black hover:bg-white duration-500">Book Now</button>
+</div>
+
+  
+<div class="w-full h-[200px] bg-cover bg-no-repeat flex flex-col justify-center p-3 gap-2 bg-white  rounded-lg shadow-md  h-46" style="background-image: url('https://cdn.lovin.co/wp-content/uploads/sites/1/2021/03/31143640/Home--e1617194134562.jpg');">
+  <h1 class="text-xl font-medium text-zinc-100">AT HOME</h1>
+  <p class="text-md text-zinc-200 w-[60%] font-medium">Get a hairstylist or beautician home</p>
+  <button routerLink="/header" class="bg-black w-fit text-white px-5 py-1 rounded-lg border hover:border-zinc-900 hover:text-black hover:bg-white duration-500">Book Now</button>
+</div>
+
+
+<!-- <button  routerLink="/header" class="bg-sky-600 duration-300 text-white px-5 py-1 rounded-lg  hover:bg-lime-600">
+  Check Facility
+</button> -->
+</main>
+
+</div>
+

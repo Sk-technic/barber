@@ -1,0 +1,205 @@
+/* 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif; 
+}
+
+.container {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container img {
+    width: 100%; 
+    height: auto;
+    max-height: 350px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.OTP {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.numberholder,
+.nameholder {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-field::placeholder {
+    color: #ff6347;
+    font-style: italic;
+}
+
+.get {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.get:hover {
+    background-color: #fc6464;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 455px) {
+    .container {
+        width: 96vw;
+        height: 100vh;
+    }
+
+    .container img {
+        width: 96vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .OTP {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .nameholder,
+    .numberholder {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .get {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        width: 98vw;
+        max-width: 720px;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .container img {
+        width: 97vw;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .OTP {
+        font-size: 22px;
+    }
+
+    .nameholder,
+    .numberholder {
+        width: 96vw;
+        font-size: 16px;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .get {
+        font-size: 16px;
+        padding: 12px 18px;
+        background-color: #ff6347;
+        color: #fff;
+        width: 96vw;
+    }
+
+    .error-message {
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (min-width: 761px) {
+    .container {
+        width: 100%; 
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 20px; 
+    }
+
+    .container img {
+        width: 96%; 
+        height: auto; 
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+
+    .OTP {
+        font-size: 26px;
+    }
+
+    .nameholder,
+    .numberholder {
+        width: 97%; 
+        font-size: 18px;
+        padding: 14px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .get {
+        font-size: 18px;
+        padding: 14px 20px;
+        width: 97%; 
+    }
+
+    .error-message {
+        font-size: 15px;
+    }
+} */

@@ -1,0 +1,93 @@
+<div class="head flex items-center justify-between p-4 bg-gray-100">
+  <div class="flex justify-center items-center gap-4">
+    <div *ngIf="showImage; else imageTemplate">
+    </div>
+    <div>
+
+      <h3 class="text-lg font-semibold text-gray-700">Hi, user</h3>
+      <span class="text-sm">Sector 74</span>
+    </div>
+  </div>
+
+  <ng-template #imageTemplate>
+    <img routerLink="/account"
+      src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg"
+      class="user w-12 h-12 rounded-full border-2 border-gray-300">
+  </ng-template>
+
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmeOGLduW1RZTkLEwKQzdfg_iDLa6SZ6gASQ&s"
+    class="notification w-6 h-6">
+</div>
+
+<main class="w-full gap-2 flex flex-col px-3 py-3 justify-center items-center">
+  <form class="border border-zinc-400 w-full p-3 rounded-xl">
+    <input type="text" class="outline-none w-full"
+      placeholder="search for the style you want">
+  </form>
+  <span class="text-zinc-700 font-medium text-lg">Service Category</span>
+  <span class="flex justify-center items-center gap-3">Male <button class="group hover:bg-purple-200 bg-purple-100 w-14 overflo h-7 rounded-full flex justify-betwen items-center px-1"><div class="group-active:translate-x-7 bg-purple-400 w-5 h-5 rounded-full"></div></button> female</span>
+</main>
+
+<main class="w-full p-2 flex justify-center items-center">
+  <section
+    class="w-full gap-4 grid grid-cols-4 place-contant-center place-items-center">
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+
+    <!--  -->
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div> <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+    <div class="w-fit  flex flex-col justify-center items-center">
+      <img class="w-18 h-14 rounded-lg "
+        src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt>
+      <h1 class="w-[80%] text-center text-xs font-medium">Hair Cut & Style</h1>
+    </div>
+
+  </section>
+</main>
